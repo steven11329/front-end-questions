@@ -1,0 +1,39 @@
+:root {
+  --color-1: #001a8b;
+  --color-2: #ffffff;
+  --color-3: #718bff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  color: var(--color-2);
+  overflow-y: auto;
+  background-color: var(--color-1);
+}
+
+.sidebar > ul > li {
+  list-style: none;
+}
+
+.sidebar > ul > li > a {
+  color: var(--color-2);
+  text-decoration: none;
+}
+
+.sidebar > ul > li > a:hover {
+  color: var(--color-3);
+  text-decoration: none;
+}
+
+main {
+  flex: 1 1 100%;
+}
