@@ -2,27 +2,19 @@ import React, { Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 import Loading from '../components/Loading';
 import '../assets/css/Loading.css';
+import '../assets/css/QuestionContainer.css';
 
 function QuestionContainer() {
   const { questionNumber } = useParams();
-  const QuestionComponent = React.lazy(() => {
-    return new Promise((resolve, reject) => {
-      try {
-        const component = import(
-          /* webpackChunkName: "Question" */
-          `../components/Question${questionNumber}`
-        );
-        setTimeout(() => {
-          resolve(component);
-        }, 2000);
-      } catch (error) {
-        reject(error);
-      }
-    });
-  });
+  const QuestionComponent = React.lazy(() =>
+    import(
+      /* webpackChunkName: "Question" */
+      `../components/Question${questionNumber}`
+    )
+  );
 
   return (
-    <div>
+    <div className="QuestionContainer">
       <Suspense fallback={<Loading />}>
         <QuestionComponent />
       </Suspense>

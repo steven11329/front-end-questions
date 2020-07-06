@@ -2,6 +2,7 @@
   --color-1: #001a8b;
   --color-2: #ffffff;
   --color-3: #718bff;
+  --sidebar-width: 200px;
 }
 
 * {
@@ -13,7 +14,8 @@
 }
 
 .sidebar {
-  width: 300px;
+  position: fixed;
+  width: var(--sidebar-width);
   height: 100vh;
   color: var(--color-2);
   overflow-y: auto;
@@ -36,4 +38,5 @@
 
 main {
   flex: 1 1 100%;
+  margin-left: var(--sidebar-width);
 }
