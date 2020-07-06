@@ -1,0 +1,29 @@
+.Question2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Question2-content {
+  flex: 1 1 auto;
+  display: flex;
+  background-color: lightgray;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Question2-item {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: darkgray;
+  margin: 10px;
+}
+
+.Question2-item:nth-child(n + 2) {
+  margin-top: 0;
+}

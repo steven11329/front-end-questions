@@ -1,0 +1,14 @@
+.Question2 {
+  height: 100%;
+}
+
+.Question2-content {
+}
+
+.Question2-item {
+  min-height: 50px;
+  text-align: center;
+  color: white;
+  background-color: darkgray;
+  margin: 10px;
+}
