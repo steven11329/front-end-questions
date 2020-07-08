@@ -1,0 +1,5 @@
+export const QUESTION3_ADD_ITEM_TO_LIST = 'QUESTION3_ADD_ITEM_TO_LIST';
+
+export default {
+  QUESTION3_ADD_ITEM_TO_LIST,
+};
