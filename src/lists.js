@@ -1,7 +1,8 @@
 export const SidebarList = [
-  { id: 'question-1', name: 'question-1' },
-  { id: 'question-2', name: 'question-2' },
-  { id: 'question-3', name: 'question-3' },
+  { id: 'Question-1', name: 'Question-1' },
+  { id: 'Question-2', name: 'Question-2' },
+  { id: 'Question-3', name: 'Question-3' },
+  { id: 'Question-4', name: 'Question-4' },
 ];
 
 export default {
